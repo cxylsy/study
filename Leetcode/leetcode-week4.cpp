@@ -31,10 +31,7 @@ public: // 2 1 4 3 5
                     cnt--;
                     count -= number;
                     if((count  + nums[i]) * (cnt + 1) < k) {
-                        for(int j = 1; j <= t - q.size(); j++) {
-                            ans += j;
-                            cout << "std" <<i << " " << j << " "  << cnt << " " << count  << " " << q.size() << " " << ans << endl;
-                        }
+                        for(int j = t; t >= q.size(); t--)
                         q.push(nums[i]);
                         count = count + nums[i];
                         cnt++;
@@ -81,4 +78,5 @@ int main() {
 }
 
 
-//[2,1,4,3,5], k = 10
+
+
