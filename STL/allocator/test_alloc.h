@@ -47,7 +47,7 @@ namespace TEST_ALLOC
 
         //rebind allocator of type U
         template <class U>
-        struct bind {
+        struct rebind {
             typedef allocator<U> other;
         };
 
